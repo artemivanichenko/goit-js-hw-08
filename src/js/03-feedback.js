@@ -17,13 +17,14 @@ feedbackForm.elements.message.value = getFeedbackForm
   ? parseFeedbackForm.message
   : '';
 
-function handleInput(evt) {
+function handleInput() {
   const feedback = {
     email: feedbackForm.email.value,
     message: feedbackForm.message.value,
   };
   localStorage.setItem(LOCALSTORAGE_KEY, JSON.stringify(feedback));
 }
+
 function handleSubmit(evt) {
   evt.preventDefault();
   console.log(
