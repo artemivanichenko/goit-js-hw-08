@@ -28,7 +28,7 @@ function handleInput() {
 function handleSubmit(evt) {
   evt.preventDefault();
   console.log(
-    ` email: ${feedbackForm.elements.email.value}\n message: ${feedbackForm.elements.message.value}`
+    `email: ${feedbackForm.elements.email.value}\n message: ${feedbackForm.elements.message.value}`
   );
   evt.currentTarget.reset();
   localStorage.removeItem(LOCALSTORAGE_KEY);
